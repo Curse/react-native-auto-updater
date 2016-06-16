@@ -39,4 +39,10 @@ public class ReactNativeAutoUpdaterModule extends ReactContextBaseJavaModule {
         constants.put("jsCodeVersion", version);
         return constants;
     }
+
+    @ReactMethod
+  	public void checkUpdate() {
+    	updater = ReactNativeAutoUpdater.getInstance(this.context());
+    	updater.checkForUpdates();
+  	}
 }
