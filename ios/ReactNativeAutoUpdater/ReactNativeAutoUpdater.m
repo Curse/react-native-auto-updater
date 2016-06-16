@@ -99,6 +99,11 @@ static bool isFirstAccess = YES;
         };
 }
 
+RCT_EXPORT_METHOD(checkUpdate)
+{
+    [[ReactNativeAutoUpdater sharedInstance] checkUpdate];
+}
+
 #pragma mark - initialize Singleton
 
 - (void)initializeWithUpdateMetadataUrl:(NSURL*)url defaultJSCodeLocation:(NSURL*)defaultJSCodeLocation defaultMetadataFileLocation:(NSURL*)metadataFileLocation {
