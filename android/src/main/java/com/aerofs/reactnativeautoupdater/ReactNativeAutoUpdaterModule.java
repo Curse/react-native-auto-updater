@@ -41,7 +41,7 @@ public class ReactNativeAutoUpdaterModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-  	public void checkUpdate() {
+  	public void checkForUpdates() {
     	updater = ReactNativeAutoUpdater.getInstance(this.context());
     	updater.checkForUpdates();
   	}

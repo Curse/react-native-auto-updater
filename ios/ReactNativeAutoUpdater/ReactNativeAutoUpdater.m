@@ -99,7 +99,7 @@ static bool isFirstAccess = YES;
         };
 }
 
-RCT_EXPORT_METHOD(checkUpdate)
+RCT_EXPORT_METHOD(checkForUpdates)
 {
     [[ReactNativeAutoUpdater sharedInstance] checkUpdate];
 }
